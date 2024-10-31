@@ -14,7 +14,8 @@ int     indexInString(char target, char *str)
 {
         int     i;
 
-        while(str[i] != '0')
+	i = 0;
+        while(str[i] != '\0')
         {
                 if (str[i] == target)
                         return (i);

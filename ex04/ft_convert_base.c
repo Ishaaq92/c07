@@ -32,9 +32,12 @@ char	*ft_convert_base(char *nbr, char *base_from, char *base_to)
 	
 	while (indexInString(nbr[i], base_from) != -1)
 	{
-		printf("%d\n", indexInString(nbr[i], base_from));
+//		printf("%d\n", indexInString(nbr[i], base_from));
 		total = (total * base_from_len) + indexInString(nbr[i], base_from); 
 		i ++;	
+		printf("%d\n", total);
+		printf("This is the char passed in: %c\n", nbr[i]);
+		printf("This is the indexInString: %d\n", indexInString(nbr[i], base_from));
 	}
 	return (ft_putnbr_base(total, base_to)); 
 }
